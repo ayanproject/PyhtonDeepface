@@ -12,7 +12,7 @@ app = FastAPI(title="Face Verification Service")
 # ---- CORS FIX ----
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://red-plant-01033d700.3.azurestaticapps.net"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
